@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pathfinding Visualizer</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Pathfinding Visualizer</h1>
+    <div class="controls">
+        <select id="algorithm">
+            <option value="dfs">DFS Algorithm</option>
+            <option value="bfs">BFS Algorithm</option>
+            <option value="dijkstra">Dijkstra Algorithm</option>
+            <option value="aStar">A* Algorithm (without heuristics)</option>
+        </select>
+        <button id="findButton">START FINDING</button>
+        <button id="clearButton">CLEAR</button>
+        <button id="wallButton">DRAW WALLS (Developing)</button>
+
+    </div>
+    <div class="grid-container" id="gridContainer">
+        <!-- Your grid cells will be dynamically created here using JavaScript -->
+    </div>
+    <script src="./node_modules/heap-js/dist/heap-js.es5.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Create a light gray background for the entire page */
+body {
+    background-color: #f0f0f0;
+}
+
+/* Style the header */
+h1 {
+    background: linear-gradient(to right, #333, #555);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+
+/* Style buttons */
+button {
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #888;
+}
+
+/* Style form elements */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* Style grid container */
+
+.controls {
+    margin-top: 5px;
+}
+
+.grid-cell:hover {
+    background-color: #ddd;
+}
+
+/* Style specific elements as needed */
+/* For example, you can style the path or visited cells differently */
+
+.path {
+    background-color: #2ecc71;
+}
+
+.visited {
+    background-color: #3498db;
+}
+
+/* Add your CSS styles for the grid and points here */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(40, 30px); /* Adjust the cell width as needed */
+    grid-template-rows: repeat(18, 30px); /* Adjust the cell height as needed */
+    gap: 2px; /* Adjust the gap between cells as needed */
+    margin-top: 5px;
+}
+
+.grid-cell {
+    width: 30px; /* Adjust the cell width to match the column width */
+    height: 30px; /* Adjust the cell height to match the row height */
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.grid-cell:hover {
+    background-color: #ddd;
+}
+
+.start-node {
+    background-color: #2ecc71;
+}
+
+.end-node {
+    background-color: #e74c3c;
+}
